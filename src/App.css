@@ -1,0 +1,70 @@
+
+* {
+  background-color:  #221f1f !important;
+}
+
+.navbar-nav .nav-link {
+  color: grey;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link.active .title {
+  color: #fff !important;
+}
+
+.icons {
+  color: grey;
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+}
+
+#kids {
+  color: grey;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+/* opzionale: togli i punti e margini di default */
+.navbar-nav {
+  list-style: none;
+  padding-left: 0;
+  display: flex; /* già bootstrap lo fa ma meglio sicuro */
+  gap: 1rem;
+}
+
+.movie-img {
+ 
+  max-height: 280px !important;
+  object-fit: fill;}
+
+  /* Colore di default del dropdown */
+.navbar-nav .nav-link.dropdown-toggle {
+  color: white !important;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover sul link "Genres" */
+.navbar-nav .nav-link.dropdown-toggle:hover {
+  color: #e50914 !important;    
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 4px !important;
+}
+
+/* Dropdown items */
+.navbar-nav .dropdown-menu {
+  background-color: #1c1c1c !important; /* sfondo scuro per dropdown */
+}
+
+.navbar-nav .dropdown-item {
+  color: white !important;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover su dropdown items */
+.navbar-nav .dropdown-item:hover {
+  color: #e50914 !important;   /* rosso evidenziato */
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
