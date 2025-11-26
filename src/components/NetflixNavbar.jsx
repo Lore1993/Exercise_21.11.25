@@ -1,5 +1,4 @@
-
-
+import { Link } from 'react-router-dom'
 
 const NetflixNavbar = () => {
   return (
@@ -7,9 +6,9 @@ const NetflixNavbar = () => {
     <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#221f1f" }}>
       <div className="container-fluid">
         {/* Logo */}
-        <a className="navbar-brand" href="#">
+        <Link to="/" className="navbar-brand">
           <img src="src/assets/logo.png" alt="logo" style={{ width: 100, height: 55 }} />
-        </a>
+        </Link>
 
         {/* Bottone collapse per mobile */}
         <button
@@ -32,29 +31,34 @@ const NetflixNavbar = () => {
           {/* Links a sinistra */}
           <ul className="navbar-nav mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link fw-bold title" href="#">
+              <Link to="/" className="nav-link fw-bold title">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link fw-bold" href="#">
+              <Link to="/pokemon-shows" className="nav-link fw-bold">
                 TV Shows
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link fw-bold" href="#">
+              <Link to="/" className="nav-link fw-bold">
                 Movies
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link fw-bold" href="#">
+              <Link to="/" className="nav-link fw-bold">
                 Recently Added
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link fw-bold" href="#">
+              <Link to="/" className="nav-link fw-bold">
                 My List
-              </a>
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/pokemon-shows" className="nav-link fw-bold">
+                Pokemon
+              </Link>
             </li>
           </ul>
 
@@ -75,4 +79,3 @@ const NetflixNavbar = () => {
 };
 
 export default NetflixNavbar;
-
